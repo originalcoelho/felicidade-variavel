@@ -1,0 +1,76 @@
+.compra-bg {
+  background: var(--cor-11) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 40px left 20px;
+}
+
+.compra {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+#compra .compra {
+  padding-top: 0px;
+}
+
+.compra h2 {
+  grid-column: 1/-1;
+}
+
+.compra-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 32px 32px 32px 60px;
+  border-radius: 4px;
+  background-color: var(--cor-12);
+}
+
+.compra-item h3 {
+  margin-bottom: 40px;
+}
+
+.compra-item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+.compra-item ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+
+.compra-item li + li {
+  margin-top: 20px;
+}
+
+.compra-item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.compra-item li::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+}
+
+.compra-item a {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .compra-bg {
+    background: var(--cor-11);
+  }
+  .compra {
+    grid-template-columns: 1fr;
+  }
+}

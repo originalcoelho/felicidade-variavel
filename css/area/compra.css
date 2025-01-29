@@ -1,0 +1,46 @@
+.compra-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-12);
+}
+
+.compra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.compra-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.compra-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+  background: url("../../img/dec/bottom-right.svg") no-repeat bottom 180px right
+    20px;
+}
+
+.compra h2 {
+  margin-bottom: 32px;
+}
+
+.compra p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .compra-bg {
+    box-shadow: inset 0 -60px var(--cor-12);
+  }
+  .compra {
+    grid-template-columns: 1fr;
+  }
+  .compra-conteudo {
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    background: none;
+  }
+}
