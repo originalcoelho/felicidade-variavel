@@ -69,8 +69,8 @@
   display: none;
 }
 
-[value="bikcraft"]:checked ~ #orcamento-bikcraft,
-[value="seguro"]:checked ~ #orcamento-seguro {
+[value="fisico"]:checked ~ #orcamento-bikcraft,
+[value="ebook"]:checked ~ #orcamento-seguro {
   display: grid;
   gap: 20px;
 }

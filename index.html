@@ -8,11 +8,13 @@
   <meta name="description" content="A importância do estudo e desenvolvimento da inteligência emocional.">
   <meta name="keywords" content="inteligência, emocional, racional">
   <link rel="icon" href="img/originalFavicon.svg" type="image/svg+xml">
-  <link href="./css/style.css" rel="preload" as="style"> <!--garante que as imagens estejam disponíveis mais cedo, melhorando o desempenho.--> 
+  <!-- <link href="./css/style.css" rel="preload" as="style"> garante que as imagens estejam disponíveis mais cedo, melhorando o desempenho.  -->
   <link href="./css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com"> <!--melhorar a experiência do usuário ao iniciar preventivamente uma conexão com essa origem -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--melhorar a experiência do usuário ao iniciar preventivamente uma conexão com essa origem -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 
 <body id="home">
@@ -32,13 +34,13 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Inteligência Emocional<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Em muitos países, o trabalho com a IE começa logo nos primeiros anos escolares. Essas regiões, quando analisadas, demonstram baixas taxas de homicídios, obesidade, feminicídios, inadimplência, entre outras características.</p>
-        <a class="botao" href="./inteligencia.html">Conheça mais</a>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Inteligência Emocional<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Em muitos países, o trabalho com a IE começa logo nos primeiros anos escolares. Essas regiões, quando analisadas, demonstram baixas taxas de homicídios, obesidade, feminicídios, inadimplência, entre outras características.</p>
+        <a class="botao fadeInDown" data-anime="600" href="./inteligencia.html">Conheça mais</a>
       </div>
       <picture>
         <source media="(max-width: 800px)" srcset="./img/roboAzul-P.jpg">
-        <img src="./img/fotos/roboAzul-M.jpg" alt="Robo ligado em inteligência artificial" width="1280" height="1600">
+        <img class="fadeInDown" data-anime="800" src="./img/fotos/roboAzul-M.jpg" alt="Robo ligado em inteligência artificial" width="1280" height="1600">
       </picture>
     </div>
   </main>
@@ -184,7 +186,7 @@
     </div>
   </footer>
 
+  <script src="./js/simple-anime.js"></script>
   <script src="./js/script.js"></script>
 </body>
-
 </html>
